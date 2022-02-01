@@ -31,18 +31,28 @@
         <link rel="stylesheet" href="css/styles.css?v=1.0" />
     </head>
 
-    <body onload="reversed(); copyWithin(); flat(); flatAndMap()">
+    <body>
         <!-- your content here... -->
         <h1>Array Methods</h1>
-        <h4>Array.reversed()</h4><p>The reverse() method reverses an array in place. The first array element becomes the last and the last array element becomes the first <br /> SYNTAX: <br /> reverse()</p> 
-        <h4>Array.copyWithin()</h4> <p>The copywithin() method shallow copies an array to another location in the same array and returns it without modifying the length of the array <br /> SYNTAX: <br /> copyWithin(target) <br /> copyWithin(target, start) <br /> copywithin(target, start, end)
+        <h4>Array.reverse() <button onclick="reversed()">Reverse()</button></h4><p>The reverse() method reverses an array in place. The first array element becomes the last and the last array element becomes the first <br /> SYNTAX: <br /> reverse()</p> 
+        <h4>Array.copyWithin() <button onclick="copyWithin()">CopyWithin()</button></h4> <p>The copywithin() method shallow copies an array to another location in the same array and returns it without modifying the length of the array <br /> SYNTAX: <br /> copyWithin(target) <br /> copyWithin(target, start) <br /> copywithin(target, start, end)
         </p>
-        <h4>Array.flat()</h4> <p>The flat() method creates a new array with all the sub-array elements concatenated into it recursively up to the specified depth.<br /> SYNTAX: <br /> flat() <br /> flat(depth) </p> 
-
+        <h4>Array.flat() <button onclick="flat()">flat()</button></h4> <p>The flat() method creates a new array with all the sub-array elements concatenated into it recursively up to the specified depth.<br /> SYNTAX: <br /> flat() <br /> flat(depth) </p>
+        <h4>Array.flatMap() <button onclick="flatMap()">flatMap()</button></h4> <p>The flatMap() method returns a new array formed by applying a given callback function to each element of the array, and then flattening the result by one level. It is identical to a map() followed
+            by a flat() of depth 1, but slightly more efficient than calling those two methods separately. <br /> SYNTAX: <br /> flatMap(currentValue) <br /> flatMap(currentValue, index) <br /> flatMap(currentValue, index, array) </p> 
+        <h4>Array.entries <button onClick="entries()">Entries()</button></h4> <p>The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.<br /> SYNTAX: <br /> entries()</p>
+        <h4>Array.keys <button onClick="keysFunc()">Keys()</button></h4> <p>The keys() method returns a new Array Iterator object that contains the keys for each index in the array.<br /> SYNTAX: <br /> keys()</p>
+        <h4>Array.values <button onClick="valuesFunc()">Values()</button></h4> <p>The values() method returns a new Array Iterator object that contains the values for each index in the array.<br /> SYNTAX: <br /> values()</p>
+        
+        
+        
         <script></script>
         <script src="js/arrayReverse.js"></script>
         <script src="js/arrayCopyWithin.js"></script>
         <script src="js/arrayFlat.js"></script>
         <script src="js/arrayFlatMap.js"></script>
+        <script src="js/arrayEntries.js"></script>
+        <script src="js/arrayKeys.js"></script>
+        <script src="js/arrayValues.js"></script>
     </body>
 </html>
