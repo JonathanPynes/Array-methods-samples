@@ -31,9 +31,18 @@
         <link rel="stylesheet" href="css/styles.css?v=1.0" />
     </head>
 
-    <body>
+    <body onload="reversed(); copyWithin(); flat(); flatAndMap()">
         <!-- your content here... -->
         <h1>Array Methods</h1>
-        <script src="js/scripts.js"></script>
+        <h4>Array.reversed()</h4><p>The reverse() method reverses an array in place. The first array element becomes the last and the last array element becomes the first <br /> SYNTAX: <br /> reverse()</p> 
+        <h4>Array.copyWithin()</h4> <p>The copywithin() method shallow copies an array to another location in the same array and returns it without modifying the length of the array <br /> SYNTAX: <br /> copyWithin(target) <br /> copyWithin(target, start) <br /> copywithin(target, start, end)
+        </p>
+        <h4>Array.flat()</h4> <p>The flat() method creates a new array with all the sub-array elements concatenated into it recursively up to the specified depth.<br /> SYNTAX: <br /> flat() <br /> flat(depth) </p> 
+
+        <script></script>
+        <script src="js/arrayReverse.js"></script>
+        <script src="js/arrayCopyWithin.js"></script>
+        <script src="js/arrayFlat.js"></script>
+        <script src="js/arrayFlatMap.js"></script>
     </body>
 </html>
