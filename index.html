@@ -43,10 +43,15 @@
         <h4>Array.entries <button onClick="entries()">Entries()</button></h4> <p>The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.<br /> SYNTAX: <br /> entries()</p>
         <h4>Array.keys <button onClick="keysFunc()">Keys()</button></h4> <p>The keys() method returns a new Array Iterator object that contains the keys for each index in the array.<br /> SYNTAX: <br /> keys()</p>
         <h4>Array.values <button onClick="valuesFunc()">Values()</button></h4> <p>The values() method returns a new Array Iterator object that contains the values for each index in the array.<br /> SYNTAX: <br /> values()</p>
+        <h4>Array.fill <button onClick="fill()">Fill()</button></h4> <p>The fill() method changes all elements int he array to a static value, from a start index (default 0) to an end index 
+            (not inclusive) the default end is array.length aka the whole thing. It returns the modified array.<br /> SYNTAX: <br /> fill(value) <br /> fill(value, start) <br /> fill(value, start, end)</p>
+        <h4>Array.slice <button onClick="slice()">Slice()</button></h4> <p>The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end 
+            (end not included) where start and end represent the index of the items in that array. the original array will not be modified.<br /> SYNTAX: <br /> slice() <br /> slice(start) <br /> slice(start, end)</p>
+        <h4>Array.splice <button onClick="splice()">Splice()</button></h4> <p>The splice() method changes the contents of an array by removing or replacing existing elements
+            and/or adding new elements in place. To access part of an array without modifying it, see slice()<br /> SYNTAX: <br /> splice(start) <br /> splice(start, deleteCount) <br /> splice(start, deleteCount, item1) <br /> splice(start, deleteCount, item1, item2, itemN)</p>
         
         
-        
-        <script></script>
+        <script src="js/arraySplice.js"></script>
         <script src="js/arrayReverse.js"></script>
         <script src="js/arrayCopyWithin.js"></script>
         <script src="js/arrayFlat.js"></script>
@@ -54,5 +59,7 @@
         <script src="js/arrayEntries.js"></script>
         <script src="js/arrayKeys.js"></script>
         <script src="js/arrayValues.js"></script>
+        <script src="js/arrayFill.js"></script>
+        <script src="js/arraySlice.js"></script>
     </body>
 </html>
