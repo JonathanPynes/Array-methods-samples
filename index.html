@@ -62,6 +62,8 @@
             The final result of running the reducer across all elements of the array is a single value. The final result of running the reducer across all elements of the array is a single value.
             The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise array element 0 is used
             as the initial value and iteration starts from the next element (index 1 instead of index 0). <br /> SYNTAX: <br /> reduce((previousValue, currentValue) => { }) <br /> reduce((previousValue, currentValue, currentIndex) => { }) <br /> reduce((previousValue, currentValue, currentIndex, array) => { }) <br /> reduce((previousValue, currentValue, currentIndex, array) => { }, initialValue)</p>
+        <h4>Array.reduceRight <button onclick="arrayReduceRight()">reduceRight()</button></h4><p>The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.<br /> SYNTAX: <br /> reduceRight((accumulator, currentValue) => { }) <br /> reduceRight((accumulator, currentValue, index) => { }) <br /> reduceRight((accumulator, currentValue, index, array) => { }) <br /> reduceRight((accumulator, currentValue, index, array) => { }, initialValue)</p>
+  
 
 
         <script src="js/arraySplice.js"></script>
@@ -84,5 +86,6 @@
         <script src="js/arrayShift.js"></script>
         <script src="js/arrayUnshift.js"></script>
         <script src="js/arrayReduce.js"></script>
+        <script src="js/arrayReduceRight.js"></script>
     </body>
 </html>
