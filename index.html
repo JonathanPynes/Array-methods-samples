@@ -49,9 +49,21 @@
             (end not included) where start and end represent the index of the items in that array. the original array will not be modified.<br /> SYNTAX: <br /> slice() <br /> slice(start) <br /> slice(start, end)</p>
         <h4>Array.splice <button onClick="splice()">Splice()</button></h4> <p>The splice() method changes the contents of an array by removing or replacing existing elements
             and/or adding new elements in place. To access part of an array without modifying it, see slice()<br /> SYNTAX: <br /> splice(start) <br /> splice(start, deleteCount) <br /> splice(start, deleteCount, item1) <br /> splice(start, deleteCount, item1, item2, itemN)</p>
-        <h4>Array.map <button onclick="map()">Map()</button></h4><p>The map() method creates a new array populated with the results of calling a provided function on every element in the calling array <br /> SYNTAX: <br /> map((element) => { }<br /> map((element, index) => { }<br /> map((element, index, array) => { }</p>
+        <h4>Array.map <button onclick="map()">Map()</button></h4><p>The map() method creates a new array populated with the results of calling a provided function on every element in the calling array <br /> SYNTAX: <br /> map((element) => { }<br /> map((element, index) => { }<br /> map((element, index, array) => { })</p>
         <h4>Array.forEach <button onclick="forEach()">forEach()</button></h4><p>The forEach() method executes a provided function once for each array element <br /> SYNTAX: <br /> forEach((element) => { }<br /> forEach((element, index) => { }<br /> forEach((element, index, array) => { }</p>
-        
+        <h4>Array.find <button onclick="find()">find()</button></h4><p>The find() method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function. undefined is returned. <br /> SYNTAX: <br /> find((element) => { })<br /> find((element, index) => { })<br /> find((element, index, array) => { })</p>
+        <h4>Array.toString <button onclick="arrayToString()">toString()</button></h4><p>The toString() method returns a string representing the specified array and its elements.<br /> SYNTAX: <br /> toString()</p>
+        <h4>Array.findIndex <button onclick="arrayFindIndex()">findIndex()</button></h4><p>The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test. Best used to find the index of a non-primitive type (objects) or your condition is more complex than just a value.<br /> SYNTAX: <br /> findIndex((element) => { }) <br /> findIndex((element, index) => { }) <br /> findIndex((element, index, array) => { })</p>
+        <h4>Array.indexOf <button onclick="arrayIndexOf()">indexOf()</button></h4><p>The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. "fromIndex" is the index to start the search at.<br /> SYNTAX: <br /> indexOf(searchElement)<br /> indexOf(searchElement, fromIndex)</p>
+        <h4>Array.lastIndexOf <button onclick="arrayLastIndexOf()">lastIndexOf()</button></h4><p>The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it not present. The array is searched backwards, starting at fromIndex.<br /> SYNTAX: <br /> lastIndexOf(searchElement)<br /> lastIndexOf(searchElement, fromIndex)</p>
+        <h4>Array.shift <button onclick="arrayShift()">shift()</button></h4><p>The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.<br /> SYNTAX: <br /> shift()</p>
+        <h4>Array.unshift <button onclick="arrayUnshift()">unshift()</button></h4><p>The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.<br /> SYNTAX: <br /> unshift(element0)<br /> unshift(element0, element1)<br /> unshift(element0, element1, ... , elementN)</p>
+        <h4>Array.reduce <button onclick="arrayReduce()">reduce()</button></h4><p>The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in oder, passing in the return value from the calculation on the preceding element.
+            The final result of running the reducer across all elements of the array is a single value. The final result of running the reducer across all elements of the array is a single value.
+            The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise array element 0 is used
+            as the initial value and iteration starts from the next element (index 1 instead of index 0). <br /> SYNTAX: <br /> reduce((previousValue, currentValue) => { }) <br /> reduce((previousValue, currentValue, currentIndex) => { }) <br /> reduce((previousValue, currentValue, currentIndex, array) => { }) <br /> reduce((previousValue, currentValue, currentIndex, array) => { }, initialValue)</p>
+
+
         <script src="js/arraySplice.js"></script>
         <script src="js/arrayReverse.js"></script>
         <script src="js/arrayCopyWithin.js"></script>
@@ -64,5 +76,13 @@
         <script src="js/arraySlice.js"></script>
         <script src="js/arrayMap.js"></script>
         <script src="js/arrayForEach.js"></script>
+        <script src="js/arrayFind.js"></script>
+        <script src="js/arrayToString.js"></script>
+        <script src="js/arrayFindIndex.js"></script>
+        <script src="js/arrayIndexOf.js"></script>
+        <script src="js/arrayLastIndexOf.js"></script>
+        <script src="js/arrayShift.js"></script>
+        <script src="js/arrayUnshift.js"></script>
+        <script src="js/arrayReduce.js"></script>
     </body>
 </html>
