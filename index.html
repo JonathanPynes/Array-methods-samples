@@ -276,6 +276,106 @@
             (inline compareFunction) sort(function compareFunc(firstElement,
             secondElement) { })
         </p>
+        <h4>Array.toLocaleString <button onclick="arrayToLocaleString()">toLocaleString()</button></h4>
+        <p>
+            The toLocaleString() method returns a string representing the elements of the array. 
+            The elements are converted to Strings using their toLocalString methods and these Strings 
+            are separated by a locale-specific String (such as a comma ",")<br />
+            SYNTAX: <br />
+            toLocaleString(); <br />
+            toLocaleString(locales); <br />
+            toLocaleString(locales, options); <br />
+        </p>
+        <h4>Array.of <button onclick="arrayOf()">arrayOf()</button></h4>
+        <p>
+            The Array.of() method creates a new Array instance from a variable number of arguments, 
+            regardless of the number or type of the arguments. The difference between Array.of() 
+            and the Array constructor is in the handling of integer arguments: Array.of(7) creates an array
+            with a single element, 7, whereas Array(7) creates an empty array with a length property of 7 
+            (Note: this implies an array of 7 empty slots, not slots with actual undefined values).<br />
+            SYNTAX: <br />
+            Array.of(element0); <br />
+            Array.of(element0, element1); <br />
+            Array.of(element0, element1, ... , elementN); <br />
+        </p>
+        <h4>Array.from <button onclick="arrayFrom()">arrayFrom()</button></h4>
+        <p>
+            The Array.from() static method creates a new, shallow-copied Array instance from an array-like or iterable object.<br />
+            SYNTAX: <br />
+            Array.from(arrayLike, (element) => { }); <br />
+            Array.from(arrayLike, (element, index) => { }); <br />
+        </p>
+        <h4>Array.push <button onclick="arrayPush()">arrayPush()</button></h4>
+        <p>
+            The Array.push() method adds one or more elements to the end of an array and returns the new length of the array.<br />
+            SYNTAX: <br />
+            push(element0); <br />
+            push(element0, element1); <br />
+            push(element0, element1, ... , elementN); <br />
+        </p>
+        <h4>Array.at <button onclick="arrayAt()">arrayAt()</button></h4>
+        <p>
+            The array.at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. 
+            Negative integers count back from the last item in the array. This is not to suggest there is anything wrong with using
+            square bracket notation. For example array[0] would return the first item. However instead of using array.length for later items; ie.
+            array[array.length-1] for the last item, you can call array.at(-1).<br />
+            SYNTAX: <br />
+            at(index) <br />
+        </p>
+        <h4>Array.concat <button onclick="arrayConcat()">arrayConcat()</button></h4>
+        <p>
+            The array.concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.<br />
+            SYNTAX: <br />
+            concat() <br />
+            concat(value0) <br />
+            concat(value0, value1) <br />
+            concat(value0, value1, ... , valueN) <br />
+        </p>
+        <h4>Array.pop <button onclick="arrayPop()">arrayPop()</button></h4>
+        <p>
+            The array.pop() method removes the last element from an array and returns that element. This method changes the length of the array.<br />
+            SYNTAX: <br />
+            pop() <br />
+        </p>
+        <h4>Array.join <button onclick="arrayJoin()">arrayJoin()</button></h4>
+        <p>
+            The join() method method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), 
+            separated by commas or a specified separator string. If the array has only one item, that item will be returned without using the separator.<br />
+            SYNTAX: <br />
+            join() <br />
+            join(separator) <br />
+        </p>
+        <h4>Array.isArray <button onclick="arrayIsArray()">arrayIsArray()</button></h4>
+        <p>
+            The Array.isArray() method determines whether the passed value is an Array<br />
+            SYNTAX: <br />
+            Array.isArray(value) <br />
+        </p>
+        <h4>Array.includes <button onclick="arrayIncludes()">arrayIncludes()</button></h4>
+        <p>
+            The Array.includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.<br />
+            SYNTAX: <br />
+            includes(searchElement) <br />
+            includes(searchElement, fromIndex) <br />
+        </p>
+        <h4>Array.some <button onclick="arraySome()">arraySome()</button></h4>
+        <p>
+            The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if,
+            in the array, it finds an element for which
+            thr provided function returns true; otherwise it returns false. It doesn't modify the array.<br />
+            SYNTAX: <br />
+            some((element) => { }) <br />
+            some((element, index) => { }) <br />
+            some((element, index, array) => { }) <br />
+        </p>
+        <h4>Array.every <button onclick="arrayEvery()">arrayEvery()</button></h4>
+        <p>
+            The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.<br />
+            SYNTAX: <br />
+            every((element) => { }) <br />
+            every((element, index) => { }) <br />
+            every((element, index, array) => { }) <br />
+        </p>
 
         <script src="js/arraySplice.js"></script>
         <script src="js/arrayReverse.js"></script>
@@ -299,5 +399,17 @@
         <script src="js/arrayReduce.js"></script>
         <script src="js/arrayReduceRight.js"></script>
         <script src="js/arraySort.js"></script>
+        <script src="js/arrayToLocaleString.js"></script>
+        <script src="js/arrayOf.js"></script>
+        <script src="js/arrayFrom.js"></script>
+        <script src="js/arrayPush.js"></script>
+        <script src="js/arrayAt.js"></script>
+        <script src="js/arrayConcat.js"></script>
+        <script src="js/arrayPop.js"></script>
+        <script src="js/arrayJoin.js"></script>
+        <script src="js/arrayIsArray.js"></script>
+        <script src="js/arrayIncludes.js"></script>
+        <script src="js/arraySome.js"></script>
+        <script src="js/arrayEvery.js"></script>
     </body>
 </html>
